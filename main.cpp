@@ -94,6 +94,9 @@ int main() {
       int number;
       cin >> number;
       REMOVE(root, root, number);
+      if (root!=NULL) {
+	root->setColor(1);
+      }
     }
 
     else if (strcmp(input, "QUIT")==0) {
